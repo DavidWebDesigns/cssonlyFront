@@ -1,0 +1,327 @@
+:root {
+    --white: #FFFFFF;
+    --black: #000000;
+    --body-background: #fffdfa;
+    --sm: 18px;
+    --md: 20px;
+    --mm: 26px;
+    --lg: 32px;
+    --xg: 48px;
+    --xx: 58px;
+}
+body{
+    /* background-image: linear-gradient(to top, #01284c, #072a4a, #0d2c49, #132d47, #182f45, #253b50, #32475b, #3f5367, #586e85, #738ba3, #8ea9c3, #aac8e4); */
+    /* background-image: linear-gradient(to top, #01284c, #2a4669, #4c6687, #6f88a7, #93acc7, #a6bed7, #bad0e7, #cee3f7, #d4e7f9, #d9ebfb, #dfeffd, #e5f3ff); */
+    /* background-image: linear-gradient(to top, #0d2546, #0d2546, #5b708b, #8598ad, #b3c1cf, #c4d1de, #d6e2ed, #e8f3fc, #dfeefa, #d7e9f8, #ddebf8, #d5e5f3); */ 
+    background-image: linear-gradient(to top, #fce4d6, #fce4d6, #fee5e2, #f4edf2, #ebdfed, #efe4ee, #f1e8f0, #f4edf2, #fae9ec, #fee5e2, #fce4d6, #fce4d6);
+    margin: 0;
+    height: 100%;
+    justify-content: center;
+}
+section{
+    margin-bottom: 8%;
+    width: 100vw;
+    justify-content: center;
+}
+.resLogo{
+    height: 80px;
+    width: 100%;
+    font-family: 'Staatliches', cursive;
+    font-weight: bold;
+    font-size: var(--xg);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10%;   
+    margin-bottom: 4%;
+}
+.minitxt{
+    font-family: 'Poiret One', cursive;
+    font-size: var(--sm);
+    margin: 4px 4px 0px;    
+}
+header{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+}
+.copyCont{
+    margin-top: 4%;
+    margin-bottom: 12%;
+    padding: 8%;
+    display: flex;
+    justify-content: center;
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+}
+.copy article{
+    text-align: center;
+    font-size: var(--lg);
+}
+.scopy{
+    font-size: var(--sm);
+    padding-left: 4%;
+    padding-right: 4%;
+    justify-self: center;
+}
+.navbarOptions{
+    margin-top: 16%;
+    display: flex;
+    align-content: center;
+}
+ul{
+    width: 100vw;
+    justify-content: space-around;
+    list-style: none;    
+    display: flex;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+li{
+    border-bottom: 1px solid var(--black);
+}
+a{
+    font-family: 'Quicksand', sans-serif;
+    text-decoration: none;
+    color: var(--black);
+    font-size: var(--md);
+}
+a:hover{
+    font-weight: bold;
+}
+.menucont{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.menuBt{
+    height: 80px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:black;
+    box-shadow: #cfb6d4  4px 4px 8px;
+    font-family: 'Staatliches', cursive;
+    font-size: var(--mm);
+    border-radius: 8px;
+}
+.mb1{
+    color: var(--white);
+    margin-top: 4%;   
+    margin-bottom: 12%;
+}
+.mainContain{
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0;
+}
+.cardCont{
+    width: 96vw;
+    height: 72vh;
+    margin-top: 4%;
+    margin-bottom: 4%;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+.contimg{
+    height: 36vh;
+    width: 92%;
+    border-radius: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.tic{
+    height: 90%;
+}
+.cimg{
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 80%;
+    border-radius: 18px;
+    box-shadow: #cfb6d4  4px 4px 8px;
+}
+.conttxt{
+    margin-top: 4%;
+    height: 50%;
+    width: 100%;
+    display: grid;
+    grid-template: repeat(10, 10%) / repeat(10, 10%);
+}
+.topti{
+    position: absolute;
+    color: #000000;
+    font-size: var(--xg);
+    font-weight: bold;
+    font-family: 'Staatliches', cursive;
+    /* text-shadow: #cfb6d4  4px 4px 8px; */
+
+} 
+.lowti{
+    font-size: var(--lg);
+    padding-left: 8%;
+    font-weight: bold;
+    font-family: 'Playfair Display', serif;
+    grid-column: 1/ 10;
+    grid-row: 1/1;
+} 
+p{
+    font-size: var(--md);
+    padding: 8px;
+    font-weight: bold;
+    grid-row: 5 / 10;
+    grid-column: 2 / 9;
+    font-family: 'Poiret One', cursive;
+}
+.price{
+    grid-row: 9 / 10 ;
+    grid-column: 9 / 10;
+    font-size: var(--lg);
+    font-family: 'Staatliches', cursive;
+    text-shadow: #cfb6d4 4px 4px 4px;
+}
+.mb2{
+    color: var(--white);
+    width: 60%;
+    height: 120px;
+    font-size: var(--lg);
+}
+footer{
+    margin-top: 8%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 20vh;
+}
+.contactInfo{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+.contactInfo img {
+    display: flex;
+    object-fit: contain;
+    width: 44px;
+    height: 44px;
+    margin-top: 20%;
+    margin-bottom: 12%;
+    border-radius: 50%;
+    box-shadow: #cfb6d4  4px 4px 8px;
+}
+
+@media screen and (min-width: 750px) {
+       .resLogo{
+        margin-top: 2%;   
+        margin-bottom: 0%;
+    }
+    .copyCont{
+        margin-top: 0%;
+        margin-bottom: 0%;
+        padding: 4%;
+    }
+    .navbarOptions{
+        margin-top: 8%;
+    }
+    ul{
+        justify-content: space-between;
+        list-style: none;    
+        padding-left: 24%;
+        padding-right: 24%;
+    }
+   .cardCont{
+        width: 40vw;
+        height: 52vh;
+        margin-left: 4%;
+        margin-top: 0%;
+        margin-bottom: 0%;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .contimg{
+        height: 38vh;
+        width: 44%;
+        border-radius: 18px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .cimg{
+        object-fit: cover;
+        display: flex;
+        justify-content: right;
+        width: 100%;
+        height: 100%;
+        border-radius: 18px;
+       
+    }
+    .tic{
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+    .topti{
+        font-size: var(--xx);
+    }
+    .lowti{
+        padding-left: 4%;
+    } 
+    .conttxt{
+        margin-top: 0%;
+        height: 80%;
+        width: 52%;
+        display: grid;
+        justify-content: left;
+        grid-template: repeat(10, 10%) / repeat(10, 10%);
+    }
+    .price{
+        grid-row: 9 / 9 ;
+        grid-column: 9 / 10;
+        font-size: var(--lg);
+        font-family: 'Staatliches', cursive;
+        text-shadow: #cfb6d4 4px 4px 4px;
+    }
+    .mb2{
+        color: var(--white);
+        width: 40%;
+        height: 120px;
+        font-size: var(--lg);
+    }
+    .mb1{
+        color: var(--white);
+        margin-top: 4%;   
+        margin-bottom: 4%;
+    }
+    .contactInfo{
+        display: flex;
+        width: 100%;
+        margin-left: 24%;
+        margin-right: 24%;
+        
+    }
+    .contactInfo img {
+        width: 44px;
+        height: 44px;
+        margin: 12%;
+    }
+}
+@media screen and (min-width: 1322px) {
+    
+    .navbarOptions{
+        margin-top: 0%;
+    }
+    .cardCont{
+        width: 40vw;
+        height: 44vh;
+    }
+}

@@ -1,0 +1,196 @@
+:root {
+    --white: #FFFFFF;
+    --black: #000000;
+    --body-background: #fffdfa;
+    --sm: 18px;
+    --md: 20px;
+    --mm: 28px;
+    --lg: 32px;
+    --xg: 54px;
+}
+body{
+    background-image: linear-gradient(to top, #fce4d6, #fce4d6, #fee5e2, #f4edf2, #ebdfed, #efe4ee, #f1e8f0, #f4edf2, #fae9ec, #fee5e2, #fce4d6, #fce4d6);
+    height: 100%;
+    margin: 0;
+    justify-content: center; 
+}
+header{
+    margin-top: 44px;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.resLogo{
+    height: 80px;
+    width: 100%;
+    font-family: 'Staatliches', cursive;
+    font-weight: bold;
+    font-size: var(--xg);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 12%;   
+    margin-bottom: 10%;
+}
+.minitxt{
+    font-family: 'Poiret One', cursive;
+    font-size: var(--sm);
+    margin: 4px 4px 0px;    
+}
+h1{
+    justify-self: center;
+    /* text-shadow: #cfb6d4  4px 4px 8px; */
+    font-family: 'Staatliches', cursive;
+    font-size: var(--xg); 
+}
+.mainContain{
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.pcont{
+    border-color: #000000 2px 2px;
+    width: 100%;
+    margin-top: 8%;
+    margin-bottom: 10%;
+    display: grid;
+    grid-template: repeat(10, 40px) / repeat(6, 1fr);
+    row-gap: 2%;
+    padding-right: 12px;
+    padding-left: 2px;
+}
+.hcont{
+    width: 90vw;
+    height: 80px;
+    align-items: center;
+    justify-content: center;
+    background-color: #000000;
+    /* box-shadow: #000000 2px 2px 16px; */
+    box-shadow: #dea7e9  2px 2px 12px;
+    border-radius: 18px;
+    display: flex;
+}
+h2{
+    font-size: var(--lg);
+    font-family: 'Playfair Display', serif;
+    margin-left: 28px;
+    color: white;
+}
+.op{
+    margin-left: 12%;
+    font-family: 'Poiret One', cursive;
+    font-weight: bold;
+    grid-column: 1/ 5;
+    grid-row: auto;
+    display: flex;
+    align-items: center;
+}
+.sect{
+    width: 98vw;
+    height: auto;
+    margin-top: 10%;
+    margin-bottom: 4%;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+.uni{
+    font-family: 'Playfair Display', serif;
+    margin-left: 2px;
+    font-size: var(--sm);
+    align-self: center;
+}
+.price{
+    font-family: 'Staatliches', cursive;
+    grid-column: 6 / 6;
+    margin-top: 6%;
+    margin-right: 24%;
+    font-size: var(--mm);
+    justify-self: right;
+    text-shadow: #cfb6d4 4px 4px 4px;
+}
+.navbarOptions{
+    margin-top: 12%;
+    margin-bottom: 12%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+ul{
+    list-style: none;  
+    justify-content: center;  
+    display: flex;
+    padding-left: 2%;
+}
+li{
+    margin-left: 2%;
+    margin-right: 4%;
+    border-bottom: 1px solid var(--black);
+}
+a{
+    font-family: 'Quicksand', sans-serif;
+    text-decoration: none;
+    color: var(--black);
+    font-size: var(--md);
+}
+a:hover{
+    font-weight: bold;
+}
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    grid-row: 187 / 201;
+    grid-column: 2 / 19;
+    margin-bottom: 24px;
+}
+.contactInfo{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+.contactInfo img {
+    display: flex;
+    object-fit: contain;
+    width: 44px;
+    height: 44px;
+    margin-bottom: 8%;
+}
+@media screen and (min-width: 950px) {
+    .resLogo{
+        height: 80px;
+        width: 100%;
+        font-family: 'Staatliches', cursive;
+        font-weight: bold;
+        font-size: var(--xg);
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 8%;   
+        margin-bottom: 0%;
+    }
+    header{
+        margin-bottom: 8%;
+    }
+    .menu{
+        margin-top: 4%;
+        margin-bottom: 2%;
+    }
+    .mainContain{
+        justify-content: space-around;
+
+    }
+    .sect{
+        width: 44vw;
+        margin-top: 0%;
+        margin-bottom: 0%;
+       
+    }
+}

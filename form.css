@@ -1,0 +1,188 @@
+:root {
+    --white: #FFFFFF;
+    --black: #000000;
+    --body-background: #fffdfa;
+    --sm: 18px;
+    --md: 20px;
+    --mm: 28px;
+    --lg: 32px;
+    --xg: 54px;
+}
+body{
+    background-image: linear-gradient(to top, #fce4d6, #fce4d6, #fee5e2, #f4edf2,  #f4edf2, #fae9ec, #fee5e2, #fce4d6, #fce4d6);
+    margin: 0;
+}
+header{
+    
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.resLogo{
+    height: 80px;
+    width: 100%;
+    font-family: 'Staatliches', cursive;
+    font-weight: bold;
+    font-size: var(--xg);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    
+    margin-top: 12%;   
+    margin-bottom: 10%;
+}
+.minitxt{
+    font-family: 'Poiret One', cursive;
+    font-size: var(--sm);
+    margin: 4px 4px 0px;    
+}
+h1{
+    justify-self: center;
+    font-family: 'Playfair Display', serif;
+    font-size: var(--xg);
+    
+}
+.mainContain{
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.pcont{
+    border-color: #000000 2px 2px;
+    width: 100%;
+    margin-top: 8%;
+    margin-bottom: 10%;
+    display: grid;
+    grid-template: repeat(10, 40px) / repeat(6, 1fr);
+    row-gap: 2%;
+}
+.navbarOptions{
+    margin-top: 12%;
+    margin-bottom: 12%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+ul{
+    list-style: none;  
+    justify-content: center;  
+    display: flex;
+    padding-left: 2%;
+}
+li{
+    margin-left: 2%;
+    margin-right: 4%;
+    border-bottom: 1px solid var(--black);
+}
+a{
+    font-family: 'Quicksand', sans-serif;
+    text-decoration: none;
+    color: var(--black);
+    font-size: var(--md);
+}
+a:hover{
+    font-weight: bold;
+}
+.fCont{
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+form{
+    text-align: center;
+    width: 100%;
+}
+.finput{
+    width: 100%; 
+}
+input::placeholder{
+    color: #a382aabb;
+}
+textarea::placeholder{
+    color: #a382aabb;
+}
+input:focus{
+    outline: 2px solid #a382aabb;
+}
+textarea:focus{
+    outline: 2px solid #a382aabb;
+}
+input{
+    background-image: linear-gradient(to top, #f4edf2, #f7e9ef, #fbe4e8, #fee0e0, #fee0e0,#fee0e0, #fee0e0);   
+    border: none;
+    box-shadow: #cfb6d4 4px 4px 4px;
+    padding: 8px;
+    margin: 4px;
+    font-weight: bold;
+    font-family: 'Poiret One', cursive;
+}
+textarea{
+    background-image: linear-gradient(to top, #f4edf2, #f7e9ef, #fbe4e8, #fee0e0, #fee0e0,#fee0e0, #fee0e0);
+    flex: 3;
+    padding: 8px;
+    padding-top: 44px;
+    box-shadow: #cfb6d4 4px 4px 4px;
+    border: none;
+    border-color: #a382aa;
+    margin: 8px;
+    font-weight: bold;
+    font-family: 'Poiret One', cursive;
+    text-align: center;
+}
+footer{
+    justify-content: center;
+    display: flex;
+}
+.contactInfo{
+    display: flex;
+    width: 80%;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.contactInfo img {
+    display: flex;
+    object-fit: contain;
+    width: 44px;
+    height: 44px;
+    margin: 4%;
+}
+@media screen and (min-width: 499px) {
+    .resLogo{
+        margin-top: 4%;   
+        margin-bottom: 4%;
+    }
+    .navbarOptions{
+        margin-top: 0%;
+        margin-bottom: 4%;
+    }
+    .contactInfo img {
+        margin: 4%;
+    }
+    .fCont{
+        height: 500px;
+    }
+}
+@media screen and (min-width: 1322px) {
+    
+    .resLogo{
+        margin-top: 2%;   
+        margin-bottom: 2%;
+    }
+    .navbarOptions{
+        margin-top: 0%;
+        margin-bottom: 2%;
+    }
+    .contactInfo img {
+        margin: 4%;
+    }
+    .fCont{
+        height: 372px;
+    }
+}
