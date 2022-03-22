@@ -22,8 +22,6 @@ header{
     align-items: center;
 }
 .resLogo{
-    height: 80px;
-    width: 100%;
     font-family: 'Staatliches', cursive;
     font-weight: bold;
     font-size: var(--xg);
@@ -33,6 +31,11 @@ header{
     flex-wrap: wrap;
     margin-top: 12%;   
     margin-bottom: 10%;
+    height: 80px;
+    width: 100%;
+}
+.resLogo:hover{
+    text-shadow: #cfb6d4  4px 4px 8px;
 }
 .minitxt{
     font-family: 'Poiret One', cursive;

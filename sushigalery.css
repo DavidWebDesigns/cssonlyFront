@@ -41,6 +41,9 @@ a{
     color: var(--black);
     font-size: var(--md);
 }
+.resLogo:hover{
+    text-shadow: #cfb6d4  4px 4px 8px;
+}
 a:hover{
     font-weight: bold;
 }

@@ -13,15 +13,12 @@ body{
     margin: 0;
 }
 header{
-    
     flex-wrap: wrap;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .resLogo{
-    height: 80px;
-    width: 100%;
     font-family: 'Staatliches', cursive;
     font-weight: bold;
     font-size: var(--xg);
@@ -29,20 +26,15 @@ header{
     align-items: center;
     display: flex;
     flex-wrap: wrap;
-    
     margin-top: 12%;   
     margin-bottom: 10%;
+    height: 80px;
+    width: 100%;
 }
 .minitxt{
     font-family: 'Poiret One', cursive;
     font-size: var(--sm);
     margin: 4px 4px 0px;    
-}
-h1{
-    justify-self: center;
-    font-family: 'Playfair Display', serif;
-    font-size: var(--xg);
-    
 }
 .mainContain{
     display: flex;
@@ -50,22 +42,23 @@ h1{
     height: auto;
     flex-wrap: wrap;
     justify-content: center;
+    text-align: center;
 }
 .pcont{
+    display: grid;
     border-color: #000000 2px 2px;
     width: 100%;
     margin-top: 8%;
     margin-bottom: 10%;
-    display: grid;
     grid-template: repeat(10, 40px) / repeat(6, 1fr);
     row-gap: 2%;
 }
 .navbarOptions{
-    margin-top: 12%;
-    margin-bottom: 12%;
     display: flex;
     align-content: center;
     justify-content: center;
+    margin-top: 12%;
+    margin-bottom: 12%;
 }
 ul{
     list-style: none;  
@@ -84,15 +77,18 @@ a{
     color: var(--black);
     font-size: var(--md);
 }
+.resLogo:hover{
+    box-shadow: #cfb6d4  4px 4px 8px;
+}
 a:hover{
     font-weight: bold;
 }
 .fCont{
-    height: 50vh;
-    width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    height: 50vh;
+    width: 100%;
 }
 form{
     text-align: center;
@@ -122,6 +118,15 @@ input{
     font-weight: bold;
     font-family: 'Poiret One', cursive;
 }
+button{
+    background-image: linear-gradient(to top, #f4edf2, #f7e9ef, #fbe4e8, #fee0e0, #fee0e0,#fee0e0, #fee0e0);   
+    border: none;
+    box-shadow: #cfb6d4 4px 4px 4px;
+    padding: 8px;
+    margin: 4px;
+    font-weight: bold;
+    font-family: 'Poiret One', cursive;
+}
 textarea{
     background-image: linear-gradient(to top, #f4edf2, #f7e9ef, #fbe4e8, #fee0e0, #fee0e0,#fee0e0, #fee0e0);
     flex: 3;
@@ -143,8 +148,7 @@ footer{
     display: flex;
     width: 80%;
     justify-content: space-around;
-    align-items: center;
-    
+    align-items: center;    
 }
 .contactInfo img {
     display: flex;
@@ -152,6 +156,8 @@ footer{
     width: 44px;
     height: 44px;
     margin: 4%;
+    border-radius: 50%;
+    box-shadow: #cfb6d4  4px 4px 8px;
 }
 @media screen and (min-width: 499px) {
     .resLogo{
