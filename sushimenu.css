@@ -144,26 +144,26 @@ a:hover{
     font-weight: bold;
 }
 footer{
+    justify-content: center;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
     align-items: center;
-    grid-row: 187 / 201;
-    grid-column: 2 / 19;
-    margin-bottom: 24px;
+    text-align: center;
 }
 .contactInfo{
     display: flex;
     width: 100%;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: center;
+    align-items: center;    
 }
 .contactInfo img {
     display: flex;
     object-fit: contain;
     width: 44px;
     height: 44px;
-    margin-bottom: 8%;
+    margin: 4%;
+    border-radius: 50%;
+    box-shadow: #cfb6d4  4px 4px 8px;
 }
 @media screen and (min-width: 950px) {
     .resLogo{
@@ -188,12 +188,14 @@ footer{
     }
     .mainContain{
         justify-content: space-around;
-
     }
     .sect{
         width: 44vw;
         margin-top: 0%;
         margin-bottom: 0%;
        
+    }
+    .contactInfo img {
+        margin: 4%;
     }
 }

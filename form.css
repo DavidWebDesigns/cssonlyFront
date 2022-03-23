@@ -11,6 +11,8 @@
 body{
     background-image: linear-gradient(to top, #fce4d6, #fce4d6, #fee5e2, #f4edf2,  #f4edf2, #fae9ec, #fee5e2, #fce4d6, #fce4d6);
     margin: 0;
+    text-align: center;
+    justify-content: center;
 }
 header{
     flex-wrap: wrap;
@@ -27,7 +29,7 @@ header{
     display: flex;
     flex-wrap: wrap;
     margin-top: 12%;   
-    margin-bottom: 10%;
+    margin-bottom: 12%;
     height: 80px;
     width: 100%;
 }
@@ -94,6 +96,9 @@ form{
     text-align: center;
     width: 100%;
 }
+.form_input{
+    border-radius: 8px;
+}
 .finput{
     width: 100%; 
 }
@@ -143,11 +148,14 @@ textarea{
 footer{
     justify-content: center;
     display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
 }
 .contactInfo{
     display: flex;
-    width: 80%;
-    justify-content: space-around;
+    width: 100%;
+    justify-content: center;
     align-items: center;    
 }
 .contactInfo img {
@@ -159,10 +167,10 @@ footer{
     border-radius: 50%;
     box-shadow: #cfb6d4  4px 4px 8px;
 }
-@media screen and (min-width: 499px) {
+@media screen and (min-width: 428px) {
     .resLogo{
         margin-top: 4%;   
-        margin-bottom: 4%;
+        margin-bottom: 8%;
     }
     .navbarOptions{
         margin-top: 0%;
@@ -175,7 +183,7 @@ footer{
         height: 500px;
     }
 }
-@media screen and (min-width: 1322px) {
+@media screen and (min-width: 732px) {
     
     .resLogo{
         margin-top: 2%;   
@@ -189,6 +197,6 @@ footer{
         margin: 4%;
     }
     .fCont{
-        height: 372px;
+        height: 400px;
     }
 }

@@ -33,7 +33,7 @@ section{
     align-items: center;
     display: flex;
     flex-wrap: wrap;
-    margin-top: 10%;   
+    margin-top: 16%;   
     margin-bottom: 4%;
 }
 .minitxt{
@@ -45,30 +45,96 @@ header{
     width: 100vw;
     display: flex;
     align-items: center;
-}
-.copyCont{
     margin-top: 4%;
-    margin-bottom: 12%;
-    padding: 8%;
+    margin-bottom: 4%;
+}
+.mainContain{
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0;
+}
+.cardCont{
+    width: 92vw;
+    height: 72vh;
+    margin-top: 4%;
+    margin-bottom: 4%;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+.contimg{
+    height: 28vh;
+    width: 90vw;
+    border-radius: 18px;
     display: flex;
     justify-content: center;
-    font-family: 'Playfair Display', serif;
-    font-weight: bold;
+    align-items: flex-end;
 }
-.copy article{
-    text-align: center;
-    font-size: var(--lg);
+.tic{
+    height: 90%;
 }
-.scopy{
-    font-size: var(--sm);
-    padding-left: 4%;
-    padding-right: 4%;
-    justify-self: center;
-}
-.navbarOptions{
-    margin-top: 16%;
+.cimg{
+    object-fit: cover;
     display: flex;
-    align-content: center;
+    justify-content: center;
+    width: 92%;
+    height: 100%;
+    border-radius: 18px;
+    box-shadow: #cfb6d4  4px 4px 8px;
+}
+.conttxt{
+    margin-top: 4%;
+    height: 50%;
+    width: 100%;
+    display: grid;
+    grid-template: repeat(10, 10%) / repeat(10, 10%);
+}
+.topti{
+    position: absolute;
+    color: #000000;
+    font-size: var(--xg);
+    font-weight: bold;
+    font-family: 'Staatliches', cursive;
+    /* text-shadow: #cfb6d4  4px 4px 8px; */
+} 
+.lowti{
+    font-weight: bold;
+    font-family: 'Playfair Display', serif;
+    font-size: var(--lg);
+    /* padding-left: 8%; */
+    grid-column: 2/ 10;
+    grid-row: 1/1;
+    margin-top: 8px;
+} 
+p{
+    font-size: var(--md);
+    padding: 8px;
+    font-weight: bold;
+    grid-row: 4 / 10;
+    grid-column: 2 / 9;
+    font-family: 'Poiret One', cursive;
+}
+.price{
+    grid-row: 9 / 10;
+    grid-column: 9 / 10;
+    font-size: var(--lg);
+    font-family: 'Staatliches', cursive;
+    text-shadow: #cfb6d4c0 4px 4px 4px;
+}
+.menuBt{
+    height: 80px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:black;
+    box-shadow: #cfb6d4  4px 4px 8px;
+    font-family: 'Staatliches', cursive;
+    font-size: var(--mm);
+    border-radius: 8px;
 }
 ul{
     width: 100vw;
@@ -90,79 +156,17 @@ a{
 a:hover{
     font-weight: bold;
 }
-.menucont{
-    width: 100%;
+.navbarOptions{
     display: flex;
+    align-content: center;
     justify-content: center;
-}
-.menuBt{
-    height: 80px;
-    width: 200px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color:black;
-    box-shadow: #cfb6d4  4px 4px 8px;
-    font-family: 'Staatliches', cursive;
-    font-size: var(--mm);
-    border-radius: 8px;
+    margin-top: 12%;
+    margin-bottom: 12%;
 }
 .mb1{
     color: var(--white);
     margin-top: 4%;   
     margin-bottom: 12%;
-}
-.mainContain{
-    display: flex;
-    width: 100%;
-    height: auto;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 0;
-}
-.cardCont{
-    width: 96vw;
-    height: 72vh;
-    margin-top: 4%;
-    margin-bottom: 4%;
-    justify-content: center;
-    display: flex;
-    flex-wrap: wrap;
-}
-.contimg{
-    height: 36vh;
-    width: 92%;
-    border-radius: 18px;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-}
-.tic{
-    height: 90%;
-}
-.cimg{
-    object-fit: cover;
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    height: 80%;
-    border-radius: 18px;
-    box-shadow: #cfb6d4  4px 4px 8px;
-}
-.conttxt{
-    margin-top: 4%;
-    height: 50%;
-    width: 100%;
-    display: grid;
-    grid-template: repeat(10, 10%) / repeat(10, 10%);
-}
-p{
-    font-size: var(--md);
-    padding: 8px;
-    font-weight: bold;
-    grid-row: 5 / 10;
-    grid-column: 2 / 9;
-    font-family: 'Poiret One', cursive;
 }
 .mb2{
     color: var(--white);
@@ -184,25 +188,24 @@ footer{
     width: 100%;
     justify-content: center;
     align-items: center;    
+    margin: 4%;
+
 }
 .contactInfo img {
     display: flex;
     object-fit: contain;
     width: 44px;
     height: 44px;
-    margin: 4%;
     border-radius: 50%;
     box-shadow: #cfb6d4  4px 4px 8px;
+    margin: 12%;    
 }
+
 @media screen and (min-width: 750px) {
+    
     .resLogo{
         margin-top: 2%;   
         margin-bottom: 0%;
-    }
-    .copyCont{
-        margin-top: 0%;
-        margin-bottom: 0%;
-        padding: 4%;
     }
     .navbarOptions{
         margin-top: 8%;
@@ -216,17 +219,17 @@ footer{
    .cardCont{
         justify-content: space-between;
         align-items: center;
-        width: 40vw;
-        height: 52vh;
+        width: 44vw;
+        height: 60vh;
         margin-left: 4%;
         margin-top: 0%;
-        margin-bottom: 0%;        
-    }
+        margin-bottom: 0%;            
+    }   
     .contimg{
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 38vh;
+        height: 50vh;
         width: 44%;
         border-radius: 18px;
     }
@@ -237,7 +240,6 @@ footer{
         width: 100%;
         height: 100%;
         border-radius: 18px;
-       
     }
     .tic{
         justify-content: center;
@@ -289,12 +291,13 @@ footer{
     }
 }
 @media screen and (min-width: 1322px) {
-    
+    .resLogo{
+        margin-top: 4%;   
+        margin-bottom: 4%;
+    }
     .navbarOptions{
-        margin-top: 0%;
+        margin-top: 8%;
+        margin-bottom: 4%;
     }
-    .cardCont{
-        width: 40vw;
-        height: 44vh;
-    }
+   
 }
